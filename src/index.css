@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bodyBg {
+  background: rgb(251, 251, 251);
+}
+
+.home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://gospringsolarnow.com/storage/2021/02/Main-Purpose-Of-Solar-Panels-scaled-2560x1280.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.living-room {
+  background-image: url("https://img.freepik.com/premium-photo/blue-photovoltaic-solar-panels-mounted-building-roof-producing-clean-ecological-electricity-sunset-production-renewable-energy-concept_127089-17667.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740");
+  background-position: center;
+  background-size: cover;
+}
+
+.bedroom {
+  background-image: url("https://img.freepik.com/free-photo/beautiful-alternative-energy-plant-with-solar-panels_23-2149192692.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740");
+  background-position: center;
+  background-size: cover;
+}
+
+.kitchen {
+  background-image: url("https://img.freepik.com/free-photo/solar-panels-roof-solar-cell_335224-1324.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740");
+  background-position: center;
+  background-size: cover;
+}
+
+.bathroom {
+  background-image: url("./assets/bathroom.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hybrid {
+  background-image: url("./assets/bathroom.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-section-1 {
+  height: 80vh;
+  background-image: url("https://wallpapercave.com/wp/wp4041936.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* loader */
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, rgb(234 179 8) 94%, #0000) top/9px
+      9px no-repeat,
+    conic-gradient(#0000 30%, rgb(234 179 8));
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+.contact-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://gospringsolarnow.com/storage/2021/02/Main-Purpose-Of-Solar-Panels-scaled-2560x1280.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
