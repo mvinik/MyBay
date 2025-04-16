@@ -60,7 +60,7 @@ const CategorySlider = () => {
               className="absolute bottom-10 left-8 z-20 text-white flex items-center gap-2 hover:text-yellow-500 transition-all duration-300"
             >
               <p className="text-xl font-bold">Residential Solar Panels</p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>
@@ -79,7 +79,7 @@ const CategorySlider = () => {
               className="absolute bottom-10 left-8 z-20 text-white flex items-center gap-2 hover:text-yellow-500 transition-all duration-300"
             >
               <p className="text-xl font-bold">Commercial Solar Panels</p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>
@@ -100,7 +100,7 @@ const CategorySlider = () => {
               <p className="text-xl font-bold">Industrial Solar Panels
 
               </p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>
@@ -122,7 +122,7 @@ const CategorySlider = () => {
               <p className="text-xl font-bold">On-Grid Solar System
 
               </p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>
@@ -141,7 +141,7 @@ const CategorySlider = () => {
               className="absolute bottom-10 left-8 z-20 text-white flex items-center gap-2 hover:text-yellow-500 transition-all duration-300"
             >
               <p className="text-xl font-bold">Off-Grid Solar System</p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>
@@ -163,7 +163,7 @@ const CategorySlider = () => {
               <p className="text-xl font-bold">Hybrid Solar Panel
 
               </p>
-              <BsArrowRight className="text-2xl" />
+              {/* <BsArrowRight className="text-2xl" /> */}
             </Link>
           </div>
         </div>

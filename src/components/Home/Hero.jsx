@@ -17,14 +17,14 @@ const Hero = () => {
           </p>
         </div>
         <h1 className="text-white font-bold text-3xl md:text-4xl lg:text-6xl">
-          Make Yourself At Homez
+        Power Your World with the Sun – Embrace Clean, Renewable Energy
         </h1>
         <p className="text-white font-medium text-sm md:text-base leading-5 md:leading-7 lg:w-3/5">
           
         </p>
         <div>
           <button className="bg-yellow-500 py-3 px-8 uppercase text-xs font-medium">
-            shop now
+           Contact Now
           </button>
         </div>
       </div>

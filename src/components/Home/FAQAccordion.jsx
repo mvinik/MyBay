@@ -37,7 +37,7 @@ const FAQAccordion = () => {
 
   return (
     <div className={`${styles.paddingHorizontal} w-full py-16 flex flex-col gap-y-10 md:flex-row gap-12`}>
-      <div className="flex flex-col text-left w-1/2">
+      <div className="flex flex-col w-full text-left md:w-1/2">
       <div className="flex items-center justify-start gap-x-3">
         <div className="border w-24 border-yellow-500" />
         <p className="text-yellow-500 font-normal text-sm uppercase">
@@ -51,7 +51,7 @@ const FAQAccordion = () => {
         
       </div>
       </div>
-      <ul className="w-1/2">
+      <ul className="w-full md:w-1/2">
         {faqs.map((faq, index) => (
           <li key={index}>
             <button

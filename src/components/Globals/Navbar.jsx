@@ -67,22 +67,22 @@ const Navbar = () => {
             <ul className="flex flex-col items-start gap-y-3 mt-8 gap-x-10">
               <li>
                 <Link to={'/'}>Home</Link>
-                <NavLink name={"Home"} url={"/"} />
+                {/* <NavLink name={"Home"} url={"/"} /> */}
               </li>
               {/* <li>
                 <NavLink name={"Products"} url={"/products"} />
               </li> */}
               <li>
               <Link to={'/services'} smooth={true} duration={500}>Services</Link>
-                <NavLink name={"Services"} url={"/services"} />
+                {/* <NavLink name={"Services"} url={"/services"} /> */}
               </li>
               <li>
               <Link to={'/about-us'}>About Us</Link>
-                <NavLink name={"About Us"} url={"/about-us"} />
+                {/* <NavLink name={"About Us"} url={"/about-us"} /> */}
               </li>
               <li>
               <Link to={'/contact-us'}>Contact Us</Link>
-                <NavLink name={"Contact Us"} url={"/contact-us"} />
+                {/* <NavLink name={"Contact Us"} url={"/contact-us"} /> */}
               </li>
               <li>
               <a href={'#testimonial'}>Testimonial</a>

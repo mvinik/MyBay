@@ -16,7 +16,7 @@ const TestimonialCard = () => {
           nulla ornare eu pretium dictum quam pharetra, nisl maecenas pretium
           sed eget interdum auctor et, aliquam sem lectus."
         </p>
-        <p className="font-bold text-base mt-2">Simon Dignite</p>
+        <p className="font-bold text-base mt-3">Simon Dignite</p>
       </div>
     </div>
   );

@@ -28,9 +28,6 @@ const BestSeller = () => {
       <div
         className={`w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 py-6`}
       >
-       
-      
- 
                    <div
                      className={`group mx-auto hover:shadow-lg transition-all duration-300 flex flex-col items-center justify-between gap-y-4 p-4 text-center`}
                    >

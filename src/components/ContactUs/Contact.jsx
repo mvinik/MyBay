@@ -43,13 +43,13 @@ const Contact = () => {
                 <FaInstagram className="hover:text-yellow-500 transition-all duration-200 cursor-pointer" />
               </div>
               <div>
-                <Link
+                {/* <Link
                   to="/"
                   className="uppercase text-xs font-medium hover:text-yellow-500 flex items-center gap-x-4"
                 >
                   <FaLocationArrow className="hover:text-yellow-500 transition-all duration-200 cursor-pointer text-lg" />
                   Get Directions
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

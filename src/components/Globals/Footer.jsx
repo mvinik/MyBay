@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="col-span-3 flex flex-col gap-y-8">
           <div className="flex items-center gap-x-1">
             <CgIfDesign className="text-4xl text-yellow-500" />
-            <h1 className="uppercase font-semibold text-3xl">kayuu</h1>
+            <h1 className="uppercase font-semibold text-3xl">solar</h1>
           </div>
           <div className="flex flex-col gap-y-2">
             <Link to="/" className="text-base">
@@ -42,8 +42,8 @@ const Footer = () => {
             <Link to="/products" className="text-base">
               Products
             </Link>
-            <Link to="/rooms" className="text-base">
-              Rooms
+            <Link to="/services" className="text-base">
+             Services
             </Link>
             <Link to="/about-us" className="text-base">
               About Us
@@ -54,22 +54,25 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-2 flex flex-col gap-y-8">
-          <h1 className="uppercase font-semibold text-xl">Rooms</h1>
+          <h1 className="uppercase font-semibold text-xl">Solutions</h1>
           <div className="flex flex-col gap-y-2">
             <Link to="/" className="text-base">
-              Living Room
+            Residential Solar
             </Link>
             <Link to="/" className="text-base">
-              Bedroom
+             Commercial Solar 
             </Link>
             <Link to="/" className="text-base">
-              Kitchen
+             Industrial Solar
             </Link>
             <Link to="/" className="text-base">
-              Bath Room
+             On-Grid
             </Link>
             <Link to="/" className="text-base">
-              Home Office
+            Off-Grid
+            </Link>
+            <Link to="/" className="text-base">
+            Hybrid
             </Link>
           </div>
         </div>
