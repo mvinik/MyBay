@@ -10,7 +10,7 @@ import SubscribeSection from "../components/Home/SubscribeSection";
 import Footer from "../components/Globals/Footer";
 import { styles } from "../styles/styles";
 import FAQAccordion from "../components/Home/FAQAccordion";
-
+import GallerySlider from "../components/Home/Gallery";
 const Home = () => {
   useEffect(() => {
     document.title = "Home - Furniture Store";
@@ -36,10 +36,10 @@ const Home = () => {
           view all best sellers
         </button> */}
       </div>
-  <div className="flex flex-col  max-w-6xl mx-auto px-4">
+  <div className="flex flex-col ">
     
     {/* Save on Electricity */}
-    <div className="grid grid-cols-1 md:grid-cols-2  items-center   justify-between  w-full rounded-2xl  transition duration-300">
+    <div className="grid grid-cols-1 md:grid-cols-2  items-center   justify-center  w-full rounded-2xl  transition duration-300">
       <div className="pr-5"><h3 className="text-xl font-bold mb-4">Save on Electricity</h3>
       <p className="text-gray-600 leading-7">
         Solar energy significantly reduces your monthly power bills. By installing a solar power system, you generate your own electricity from sunlight, decreasing your dependence on the grid. 
@@ -47,12 +47,16 @@ const Home = () => {
         Plus, many regions offer <strong>net metering</strong>, allowing you to sell unused power back to the grid — putting money back in your pocket.
       </p></div>
       <div>
-        <img src="https://img.freepik.com/premium-photo/high-voltage-pylons-with-electric-power-lines-transfering-electricity-from-solar-photovoltaic-sells-sunrise-production-sustainable-energy-concept_127089-16130.jpg?w=740" alt="" />
+        <img 
+        className="object-cover w-full"
+        src="https://img.freepik.com/premium-photo/high-voltage-pylons-with-electric-power-lines-transfering-electricity-from-solar-photovoltaic-sells-sunrise-production-sustainable-energy-concept_127089-16130.jpg?w=740" alt="" />
       </div>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2  items-center  justify-between  w-full rounded-2xl  transition duration-300">
     <div>
-        <img src="https://img.freepik.com/free-photo/solar-pannels-wind-power-plant-outside_23-2149352234.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740" alt="" />
+        <img 
+        className="object-cover w-full"
+        src="https://img.freepik.com/free-photo/solar-pannels-wind-power-plant-outside_23-2149352234.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740" alt="" />
       </div>
       <div  className="md:pl-5"><h3 className="text-xl font-bold mb-4">Eco-Friendly</h3>
       
@@ -71,7 +75,9 @@ const Home = () => {
         In addition to reducing future energy bills, it’s a smart real estate investment that pays off both now and later.
       </p></div>
       <div>
-        <img src="https://img.freepik.com/premium-photo/photovoltaic-modules-renewable-energy_1417-6803.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740" alt="" />
+        <img 
+        className="object-cover w-full"
+        src="https://img.freepik.com/premium-photo/photovoltaic-modules-renewable-energy_1417-6803.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740" alt="" />
       </div>
     </div>
 
@@ -85,6 +91,7 @@ const Home = () => {
       {/* <WhyChooseUsSection /> */}
 
 <FAQAccordion/>
+<GallerySlider/>
 <TestimonialsSection />
    
       {/* <SubscribeSection /> */}

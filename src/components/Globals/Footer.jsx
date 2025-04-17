@@ -78,9 +78,9 @@ const Footer = () => {
         </div>
         <div className="col-span-2 flex flex-col gap-y-8">
           <h1 className="uppercase font-semibold text-xl">Stay In Touch</h1>
-          <p className="text-base">
+          {/* <p className="text-base">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          </p> */}
           <div className="flex gap-x-3 gap-y-2">
             <Link
             target="_blank"

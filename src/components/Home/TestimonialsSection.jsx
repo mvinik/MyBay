@@ -5,7 +5,7 @@ import TestimonialCard from "./TestimonialCard";
 const TestimonialsSection = () => {
   return (
     <section
-      className={`w-full ${styles.paddingHorizontal} py-6 flex flex-col gap-y-10`}
+      className={`w-full ${styles.paddingHorizontal} py-6 lg:py-16 flex flex-col gap-y-10`}
      id='testimonial'
     >
       <div className="flex items-center justify-start gap-x-3">

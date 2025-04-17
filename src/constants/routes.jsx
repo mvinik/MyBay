@@ -4,7 +4,7 @@ import { lazy } from "react";
 
 const Home = lazy(() => import("../pages/Home"));
 const Products = lazy(() => import("../pages/Products"));
-const Rooms = lazy(() => import("../pages/Rooms"));
+const Rooms = lazy(() => import("../pages/Services"));
 const AboutUs = lazy(() => import("../pages/AboutUs"));
 const Contactus = lazy(() => import("../pages/ContactUs"));
 const Cart = lazy(() => import("../pages/Cart"));
