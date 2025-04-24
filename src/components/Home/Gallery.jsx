@@ -1,49 +1,150 @@
 import React, { useState } from "react";
 import { styles } from "../../styles/styles";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import './Gallery.css'
+import G1 from '/assets/G1.jpg'
+import G2 from '/assets/G2.jpg'
+import G3 from '/assets/G3.jpg'
+import G4 from '/assets/G4.jpg'
+import G5 from '/assets/G5.jpg'
+import G6 from '/assets/G6.jpg'
+import G7 from '/assets/G7.jpg'
 
-const images = [
-  "https://img.freepik.com/premium-photo/solar-energy-generated-farm_28943-282.jpg?w=740",
-  "https://img.freepik.com/premium-photo/renewable-energy-solar-panels-wind-turbines-green-grass-blue-sky_28943-541.jpg?w=740",
-  "https://img.freepik.com/free-photo/photovoltaics-solar-power-station-energy-from-natural_169016-5821.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740",
-  "https://img.freepik.com/premium-photo/aerial-view-solar-power-plant-construction-green-field-assembling-electric-panels-producing-clean-ecologic-energy_127089-11446.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740",
-  "https://img.freepik.com/free-photo/medium-shot-engineers-discussing-about-solar-pannels_23-2149352239.jpg?t=st=1744870150~exp=1744873750~hmac=f64cb08276e701e9c0520d458ee2d927d3bc4914aa8a1461bd7421238634051a&w=740",
-//   "https://img.freepik.com/free-photo/solar-power-power-station_1387-161.jpg?t=st=1744870426~exp=1744874026~hmac=7ba21e8644efb7790be5eaafc93f407f1763072db99aa0d0b20a79d730dd42aa&w=740",
+const images = [G1, G2, G3, G4, G5, G6, G7
+
 ];
 
 const GallerySlider = () => {
   const [current, setCurrent] = useState(0);
+  const NextArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div
+        className='Next'
+        onClick={onClick}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#FFEEA9" // Icon color
+          width="24px"
+          height="24px"
+        >
+          <path d="M10 6l6 6-6 6V6z" />
+        </svg>
+      </div>
+    );
+  };
 
+  const PrevArrow = (props) => {
+    const { onClick } = props;
+    return (
+      <div
+        className='Prev'
+        onClick={onClick}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="#FFEEA9" // Icon color
+          width="24px"
+          height="24px"
+        >
+          <path d="M14 18l-6-6 6-6v12z" />
+        </svg>
+      </div>
+    );
+  };
+
+
+
+
+  const thumbnailSettings = {
+    infinite: true,
+    autoplay: true,
+    speed: 1000,
+    autoplaySpeed: 2500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    // arrows: false,
+    easing: 'easeOut',
+    rows: 1,
+    // centerMode: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    // responsive: [
+    //   {
+    //     breakpoint: 1220,
+    //     settings: {
+    //       slidesToShow: 4,
+    //       slidesToScroll: 1,
+    //       rows: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 768,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 1,
+    //       centerMode: true,
+    //       rows: 1,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       rows: 1,
+    //       centerMode: true,
+    //     },
+    //   },
+
+
+    // ],
+  };
   return (
-    <div className={`${styles.paddingHorizontal} w-full lg:py-16 flex flex-col`}>
-      <div className="flex items-center justify-start gap-x-3 py-6">
-        <div className="border w-24 border-yellow-500" />
-        <p className="text-yellow-500 font-normal text-sm uppercase">Gallery</p>
+    <div className={`${styles.paddingHorizontal} w-full lg:py-16 flex flex-col bodyBg`}>
+      <div className="flex items-center justify-center gap-x-3 py-5">
+        <div className="border w-24 border-purple" />
+        <p className="text-purple font-bold text-4xl uppercase">
+          Explore Our Works
+        </p>
+        <div className="border w-24 border-purple" />
       </div>
-
-      <div className="w-full flex flex-col lg:flex-row items-start justify-between lg:items-end gap-y-6 lg:gap-y-0">
-        <h2 className="text-5xl font-bold">Explore Our Works</h2>
-      </div>
-
       {/* Main Image */}
-      <div className="grid gap-4 pt-6">
+      <div className="flex flex-col gap-4 pt-6">
         <div>
           <img
             src={images[current]}
             alt="main-gallery"
-          className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"/>
+            className="h-auto w-full max-w-full rounded-lg  md:h-[480px]" />
         </div>
 
-        {/* Thumbnails */}
-        <div className="grid  grid-cols-5 gap-x-4">
-          {images.map((img, index) => (
-            <img data-thumbnail 
-              key={index}
-              src={img}
-              onClick={() => setCurrent(index)}
-              className="object-cover object-center h-25 max-w-full rounded-lg cursor-pointer" 
-              alt={`thumbnail-${index}`}
-            />
-          ))}
+  
+
+        {/* Thumbnail Slider */}
+        <div>
+          <Slider {...thumbnailSettings}>
+            {images.map((img, index) => (
+              <div key={index} className="grid  grid-cols-5 gap-x-4">
+                <div
+                  className="px-1">
+                  {/* className="px-1 w-35 h-20 lg:w-full lg:h-60"> */}
+                  <img
+                    data-thumbnail
+                    src={img}
+                    onClick={() => setCurrent(index)}
+                    className={`object-cover object-center w-full  h-full  rounded-lg cursor-pointer `}
+                    alt={`Thumbnail ${index}`}
+                  />
+                </div>
+              </div>
+            ))}
+          </Slider>
         </div>
       </div>
     </div>
@@ -51,3 +152,5 @@ const GallerySlider = () => {
 };
 
 export default GallerySlider;
+
+
