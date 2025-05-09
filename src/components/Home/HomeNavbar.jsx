@@ -10,12 +10,13 @@ const HomeNavbar = () => {
   const [openNav, setOpenNav] = useState(false);
   return (
     <nav
-      className={`w-full h-22  ${styles.paddingHorizontal} flex items-center justify-between  shadow-lg shadow-gray-400`}
+      className={`w-full md:h-[110px] h-[70px] ${styles.paddingHorizontal} flex items-center justify-between`}
     >
       <Link to="/" className="flex items-center gap-x-1">
         <img
-          className="h-20 sm:h-20 md:h-28 lg:h-30"
-          src='/assets/mybay logo 2 PNG.png'
+          loading="eager"
+          className="h-10  md:h-20 lg:h-30"
+          src='https://api.shivyantra.com/uploads/mybay_logo_2_PNG_41e0efb903.png'
           alt="Mybay Logo"
         />
         {/* <CgIfDesign className="text-3xl hover:text-purple hover:underline-offset-2" />
@@ -71,7 +72,7 @@ const HomeNavbar = () => {
         className="bg-purple w-8 h-8 lg:hidden flex items-center justify-center"
         onClick={() => setOpenNav(!openNav)}
       >
-        <IoMenu className="text-xl" />
+        <IoMenu className="text-xl text-white" />
       </button>
       <div
         className={`w-full h-screen fixed bg-transparent top-0 left-0 right-0 bottom-0 z-20 flex justify-end ${openNav ? "translate-x-0" : "translate-x-full"

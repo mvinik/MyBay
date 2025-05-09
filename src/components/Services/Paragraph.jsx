@@ -8,11 +8,12 @@ const Paragraph = () => {
 
       <div className={`w-full ${styles.paddingHorizontal} py-6 flex flex-col bodyBg text-black`}>
 
-        <div className={` pb-3 pt-6 lg:py-6 bodyBg flex flex-col md:flex-row items-center  `}>
+        <div data-aos="fade-up"
+         className={` pb-3 pt-6 lg:py-6 bodyBg flex flex-col md:flex-row items-center  `}>
           <div className="w-full md:w-2/3 p-2" >
             <div className="flex items-center justify-start gap-x-3 mb-5">
               <div className="border w-10 border-purple" />
-              <p className="text-purple font-semibold text-xl uppercase">
+              <p className="text-purple font-semibold text-lg md:text-xl uppercase">
                 Custom Design and Installation
               </p>
             </div>
@@ -25,11 +26,12 @@ const Paragraph = () => {
               className="w-full" src='https://media.istockphoto.com/id/1405880267/photo/two-engineers-installing-solar-panels-on-roof.jpg?s=612x612&w=0&k=20&c=OvQDbJaTnMM4jPfIA3y5vrO88i98NZJRahZtnYFZCq0=' alt="Solar Panel" /></div>
         </div>
 
-        <div className={` py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
+        <div data-aos="fade-up"
+        className={` py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
           <div className="w-full md:w-2/3 p-2"  >
             <div className="flex items-center justify-start gap-x-3 mb-5">
               <div className="border w-10 border-purple" />
-              <p className="text-purple font-semibold text-xl uppercase">
+              <p className="text-purple font-semibold text-lg md:text-xl uppercase">
                 Roof-Mounted and Ground-Mounted Systems
               </p>
             </div>
@@ -43,11 +45,12 @@ const Paragraph = () => {
         </div>
 
 
-        <div className={` py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
+        <div data-aos="fade-up"
+        className={` py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
           <div className="w-full md:w-2/3 p-2" >
             <div className="flex items-center justify-start gap-x-3 mb-5">
               <div className="border w-10 border-purple" />
-              <p className="text-purple font-semibold text-xl uppercase">
+              <p className="text-purple font-semibold text-lg md:text-xl uppercase">
                 Battery Storage Integration
               </p>
             </div>
@@ -60,11 +63,12 @@ const Paragraph = () => {
         </div>
 
 
-        <div className={`py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
+        <div data-aos="fade-up"
+        className={`py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
           <div className="w-full md:w-2/3 p-2" >
             <div className="flex items-center justify-start gap-x-3 mb-5">
               <div className="border w-10 border-purple" />
-              <p className="text-purple font-semibold text-xl uppercase">
+              <p className="text-purple font-semibold text-lg md:text-xl uppercase">
                 Monitoring Systems
               </p>
             </div>
@@ -77,11 +81,12 @@ const Paragraph = () => {
             <img src='https://img.freepik.com/free-photo/photovoltaics-solar-power-station-energy-from-natural_169016-5819.jpg?ga=GA1.1.701827324.1739344996&semt=ais_hybrid&w=740' alt="Solar Panel"  /></div>
         </div>
 
-        <div className={`py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
+        <div data-aos="fade-up"
+        className={`py-3 lg:py-6 bodyBg flex flex-col md:flex-row items-center `}>
           <div className="w-full md:w-2/3 p-2" >
             <div className="flex items-center justify-start gap-x-3 mb-5">
               <div className="border w-10 border-purple" />
-              <p className="text-purple font-semibold text-xl uppercase">
+              <p className="text-purple font-semibold text-lg md:text-xl uppercase">
                 Maintenance and Support
               </p>
             </div>

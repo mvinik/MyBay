@@ -12,13 +12,15 @@ import industrial from '/assets/industrial.jpg'
 import INS from '/assets/INS.jpg'
 import HowIW from "../components/Home/HowIW";
 import CallToAction from "../components/Services/CTA";
+import { useLocation } from "react-router-dom";
+import { ChevronLeft} from 'lucide-react';
 const solarPanelData = [
   {
     id: "residential",
     image: HOME,
-    title: "Residential Solar Panels",
+    title: "Residential Solar Panel",
     shortDescription: "Perfect for homeowners looking to save money and go green.",
-    fullTitle: "Why Choose Residential Solar Panels?",
+    fullTitle: "Why Choose Residential Solar Panel?",
     description:
       "Our residential solar systems are designed to deliver maximum efficiency while complementing your home’s aesthetics. Whether you're looking to cut costs, reduce your carbon footprint, or gain energy independence — we've got you covered.",
     featuresTitle: "Key Features",
@@ -40,10 +42,10 @@ const solarPanelData = [
   },
   {
     id: "institute",
-    title: "Institute Solar Panels",
+    title: "Institution Solar Panel",
     image: INS, // Replace with the actual import or path to the image
     shortDescription: "Smart solar solutions designed for schools, colleges, and universities.",
-    fullTitle: "Why Choose Institute Solar Panels?",
+    fullTitle: "Why Choose Institute Solar Panel?",
     description:
       "Institute solar panels offer reliable, cost-effective energy solutions tailored for educational campuses. From classrooms to laboratories, our systems ensure sustainable power while promoting green learning environments.",
     
@@ -69,9 +71,9 @@ const solarPanelData = [
   {
     id: "commercial",
     image: COMMERCIAL,
-    title: "Commercial Solar Panels",
+    title: "Commercial Solar Panel",
     shortDescription: "Smart energy solutions for businesses of all sizes.",
-    fullTitle: "Why Choose Commercial Solar Panels?",
+    fullTitle: "Why Choose Commercial Solar Panel?",
     description:
       "Commercial solar panels are an excellent investment for businesses seeking long-term cost savings and sustainable branding. Our tailored solutions can power any commercial space with high efficiency and low maintenance.",
     featuresTitle: "Key Features",
@@ -93,10 +95,10 @@ const solarPanelData = [
   },
   {
     id: "industrial",
-    title: "Industrial Solar Panels",
+    title: "Industrial Solar Panel",
     image: industrial,
     shortDescription: "Heavy-duty solar solutions for large-scale industrial applications.",
-    fullTitle: "Why Choose Industrial Solar Panels?",
+    fullTitle: "Why Choose Industrial Solar Panel?",
     description:
       "Industrial solar systems provide powerful, large-scale energy generation tailored to meet the demands of factories and production facilities. Our systems are optimized for performance, durability, and ROI.",
     featuresTitle: "Key Features",
@@ -204,7 +206,12 @@ const Services = () => {
 
   useEffect(() => {
     document.title = "Services - MyBay  ";
-  }, []);
+  }, []);  const location=useLocation();
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
+
+  },[location])
 
   // const handleShare = async () => {
   //   if (navigator.share) {
@@ -255,17 +262,23 @@ const Services = () => {
         : "Discover MyBay’s solar panel solutions for homes, institutions, businesses, and industries. High-efficiency, cost-saving, and eco-friendly energy systems tailored to your needs."
     }
   />
-  <meta name="keywords" content="solar panels, MyBay, residential solar, commercial solar, industrial solar, institute solar, green energy, solar installation" />
+  <meta name="keywords" content="solar panels, MyBay, residential solar, commercial solar, industrial solar, institute solar, green energy, solar installation,Solar panel services,Best solar panel company,
+Affordable solar installation,
+Solar power solutions,
+Solar system for home" />
   <meta property="og:title" content={selectedPanel ? selectedPanel.title : "MyBay Solar Panel Solutions"} />
   <meta property="og:description" content={selectedPanel ? selectedPanel.description : "Explore sustainable solar power systems from MyBay for homes, schools, institutions and factories."} />
   <meta property="og:image" content={selectedPanel ? selectedPanel.image : "/assets/m1.jpg"} />
   <meta property="og:url" content={window.location.href} />
  </Helmet>
 
+ 
+
     <div className={`${styles.paddingHorizontal} py-6 lg:py-10 bodyBg `}>
-      <div className="flex flex-col gap-y-6 justify-start items-center text-center">
+      <div 
+      className="flex flex-col gap-y-6 justify-start items-center text-center">
         <h1 className="font-bold text-4xl">Our Services</h1>
-        <p className="text-black text-base leading-7 lg:w-4/5 font-medium ">
+        <p className="text-black text-base leading-7  font-medium text-center " >
           Empowering homes and businesses through intelligent, clean energy solutions. We bring
           innovation and reliability to every rooftop and open space we serve. Our solar systems are
           tailored for performance, sustainability, and future growth, making renewable energy more
@@ -281,9 +294,9 @@ const Services = () => {
     <div className={`w-full ${styles.paddingHorizontal} py-6 flex flex-col gap-y-10 bodyBg`}>
       {!selectedPanel ? (
         <div className="">
-          <div className="flex items-center justify-center gap-x-3 py-5">
+          <div className="flex items-center justify-center gap-x-3 py-5" data-aos="flip-up">
             <div className="border w-24 border-purple" />
-            <p className="text-purple font-bold text-4xl uppercase">
+            <p className="text-purple font-bold text-xl md:text-4xl text-center uppercase">
               SOlutions
             </p>
             <div className="border w-24 border-purple" />
@@ -291,9 +304,10 @@ const Services = () => {
           {/* <h1 className="text-4xl font-bold text-center mb-12">
             Our Solar Panel Solutions
           </h1> */}
-          <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-6 ">
+          <div className="grid md:grid-cols-2 sm:grid-cols-2 gap-6 ">
             {solarPanelData.map((panel) => (
               <div
+              data-aos="fade-down"
                 key={panel.id}
                 onClick={() => setSelectedPanel(panel)}
                 className="cursor-pointer bg-white shadow-md w-86 h-full rounded-xl p-6 hover:shadow-xl transition duration-300"
@@ -324,9 +338,10 @@ const Services = () => {
                 <button
                   onClick={() => setSelectedPanel(null)}
                   className="flex items-center gap-2 text-purple font-semibold">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-5 h-5">
+                  {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={4} stroke="currentColor" className="w-5 h-5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                  </svg>
+                  </svg> */}
+  <ChevronLeft size={35} className='text-purple text-2xl font-semibold' />
                   {selectedPanel.title}
                 </button>
 
@@ -342,7 +357,7 @@ const Services = () => {
 
 
           <div className="flex flex-col md:flex-row justify-around my-2">
-            <div className="flex flex-col gap-10 p-6">
+            <div className="flex flex-col gap-10 p-6" data-aos="fade-left">
               <div>
                 <div className="flex items-center justify-start gap-x-3 mb-5">
                   <div className="border w-10 border-purple" />
@@ -380,7 +395,7 @@ const Services = () => {
             </div>
             <div>
               <img src={selectedPanel.image}
-                className="p-6" alt={selectedPanel.title} />
+                className="p-6" alt={selectedPanel.title}  data-aos="fade-right"/>
             </div>
           </div>
 

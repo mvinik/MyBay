@@ -1,36 +1,36 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { LucideSearchCheck, Wrench, DollarSign } from 'lucide-react'
-
+import { styles } from '../../styles/styles'
 const steps = [
   {
     title: 'Step 1: Consultation',
     description: 'Schedule a consultation with our experts to discuss your energy needs.',
     icon: <LucideSearchCheck className="text-white w-8 h-8" />,
-    bgColor: 'bg-gradient-to-r from-purple to-indigo-500',
+    bgColor: 'bg-gradient-to-r from-purple to-purple',
   },
   {
     title: 'Step 2: Installation',
     description: 'Our certified professionals will install your system quickly and efficiently.',
     icon: <Wrench className="text-white w-8 h-8" />,
-    bgColor: 'bg-gradient-to-r from-green-500 to-emerald-500',
+    bgColor: 'bg-gradient-to-r from-purple to-purple',
   },
   {
     title: 'Step 3: Enjoy Savings',
     description: 'Start saving on your energy bills and enjoy cleaner living, with minimal maintenance.',
     icon: <DollarSign className="text-white w-8 h-8" />,
-    bgColor: 'bg-gradient-to-r from-yellow-500 to-orange-400',
+    bgColor: 'bg-gradient-to-r from-purple to-purple',
   },
 ]
 
 const HowIW = () => {
   return (
-    <div className=" py-16 px-4 md:px-20">
+    <div className={`w-full ${styles.paddingHorizontal} py-6 lg:py-16  flex flex-col gap-y-10 bodyBg `}>
 
       {/* 🔷 Custom Heading */}
-      <div className="flex items-center justify-center gap-x-3 py-5">
+      <div className="flex items-center justify-center gap-x-3 py-5" data-aos="flip-up">
         <div className="border w-24 border-purple" />
-        <p className="text-purple font-bold text-4xl uppercase tracking-wider">
+        <p className="text-purple font-bold text-xl md:text-4xl text-center uppercase tracking-wider">
           How it's Works
         </p>
         <div className="border w-24 border-purple" />

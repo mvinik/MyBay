@@ -108,17 +108,18 @@ const GallerySlider = () => {
   };
   return (
     <div className={`${styles.paddingHorizontal} w-full lg:py-16 flex flex-col bodyBg`}>
-      <div className="flex items-center justify-center gap-x-3 py-5">
+      <div className="flex items-center justify-center gap-x-3 py-5 " data-aos="flip-up" >
         <div className="border w-24 border-purple" />
-        <p className="text-purple font-bold text-4xl uppercase">
+        <p className="text-purple font-bold text-xl md:text-4xl text-center  uppercase">
           Explore Our Works
         </p>
         <div className="border w-24 border-purple" />
       </div>
       {/* Main Image */}
-      <div className="flex flex-col gap-4 pt-6">
+      <div className="flex flex-col gap-4 pt-6" >
         <div>
           <img
+          data-aos="zoom-in-up"
             src={images[current]}
             alt="main-gallery"
             className="h-auto w-full max-w-full rounded-lg  md:h-[480px]" />
@@ -135,6 +136,7 @@ const GallerySlider = () => {
                   className="px-1">
                   {/* className="px-1 w-35 h-20 lg:w-full lg:h-60"> */}
                   <img
+                  loading="eager"
                     data-thumbnail
                     src={img}
                     onClick={() => setCurrent(index)}

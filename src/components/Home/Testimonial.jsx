@@ -28,9 +28,9 @@ const Testimonial = () => {
   return (
     <div>
       <div className={`w-full ${styles.paddingHorizontal} py-6 lg:py-16 bodyBg flex flex-col gap-y-10`}>
-        <div className="flex items-center justify-center gap-x-3 py-5">
+        <div className="flex items-center justify-center gap-x-3 py-5" data-aos="flip-up" >
           <div className="border w-24 border-purple" />
-          <p className="text-purple font-bold text-4xl uppercase">
+          <p className="text-purple font-bold text-xl text-center md:text-4xl uppercase">
             What People say
           </p>
           <div className="border w-24 border-purple" />

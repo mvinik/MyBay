@@ -18,10 +18,11 @@
 .home-hero {
   background-image: 
   /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), */
-    url("/assets/m1.jpg");
+    url("https://api.shivyantra.com/uploads/m1_f7374bded8.webp");
   background-position: center;
   background-size: cover;
-  height: 100vh;
+
+  
 }
 
 .living-room {
@@ -96,4 +97,13 @@
 
 .custom-underline:hover::after {
   transform: scaleX(1);
+}
+
+.containerbg{
+  /* background-color: #6d4781; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url("https://gospringsolarnow.com/storage/2021/02/Main-Purpose-Of-Solar-Panels-scaled-2560x1280.jpeg");
+  background-position: center;
+  background-size: cover;
+ 
 }

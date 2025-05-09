@@ -17,7 +17,8 @@ const Contact = () => {
   return (
     <section className={`${styles.paddingHorizontal} py-6 lg:py-20 bodyBg`}>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2">
-        <div className="col-span-2 lg:col-span-1 flex gap-x-2 lg:gap-x-4">
+        <div data-aos="fade-up-right"
+        className="col-span-2 lg:col-span-1 flex gap-x-2 lg:gap-x-4">
           <div>
             <div className="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center">
               <FaLocationDot className="text-purple text-2xl" />
@@ -55,7 +56,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-2 lg:col-span-1 lg:px-40">
+        <div data-aos="fade-up-left"
+        className="col-span-2 lg:col-span-1 lg:px-40">
           <div className="flex items-start gap-x-4 border-b py-4">
             <div>
               <IoCall className="text-base text-purple" />
@@ -108,7 +110,7 @@ const Contact = () => {
         </div>
        
       </div>
-      <div className="w-full">
+      <div data-aos="fade-up" className="w-full">
       <iframe
       className="mt-10"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.7610711104744!2d80.21254447575778!3d13.050874787271859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267f622160271%3A0x3149fc03560d447!2sJGN%20Technologies!5e0!3m2!1sen!2sin!4v1743079683877!5m2!1sen!2sin"
