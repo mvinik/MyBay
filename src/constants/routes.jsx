@@ -8,6 +8,7 @@ const Home = lazy(() => import("../pages/Home"));
 const Rooms = lazy(() => import("../pages/Services"));
 const AboutUs = lazy(() => import("../pages/AboutUs"));
 const Contactus = lazy(() => import("../pages/ContactUs"));
+const  SolarCalculator= lazy(() => import("../components/Calculator/SolarCalculator"));
 
 
 
@@ -32,6 +33,11 @@ export const routes = [
     title: "Contactus Page",
     url: "/contact-us",
     page: <Layout page={<Contactus />} />,
+  },
+ {
+    title: "SolarCalculator Page",
+    url: "/solar-calculator",
+    page: <Layout page={<SolarCalculator />} />,
   },
 
 

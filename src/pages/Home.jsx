@@ -13,6 +13,7 @@ import Testimonial from "../components/Home/Testimonial";
 import HomeNavbar from "../components/Home/HomeNavbar";
 import b1 from '/assets/b1.jpg'
 import HowIW from "../components/Home/HowIW";
+import SolarCalculator from "../components/Home/SolarCalculator";
 
 const Home = () => {
   useEffect(() => {
@@ -38,6 +39,8 @@ const Home = () => {
       <Hero />
       {/* <NewCollection /> */}
       {/* Why Solar Section */}
+
+      {/* <SolarCalculator/> */}
       <section
         className={`${styles.paddingHorizontal} w-full py-6 lg:py-12 flex flex-col bodyBg  gap-y-8`}>
         <div data-aos="fade-up"  className="flex items-center justify-center gap-x-3 py-5">

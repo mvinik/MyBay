@@ -23,12 +23,12 @@ const HomeNavbar = () => {
         <h1 className="uppercase font-semibold text-xl text-white">SOLAR PANEL</h1> */}
         {/* <SiKamailio className="hover:text-purple hover:underline-offset-2 text-8xl"/> */}
       </Link>
-      <ul className="hidden lg:flex text-lg items-center gap-x-10">
+      <ul className="hidden lg:flex text-lg items-center gap-x-8">
         <li>
 
           <Link
             to="/"
-            className="font-bold relative inline-block pb-1 text-black custom-underline hover:text-purple transition-all duration-300  text-[20px] "
+            className="font-bold relative inline-block pb-1 text-black custom-underline hover:text-purple transition-all duration-300  text-[19px] "
           >
             Home
           </Link>
@@ -38,7 +38,7 @@ const HomeNavbar = () => {
         <li>
           <Link
             to="/about-us"
-            className=" font-bold hover:text-purple  relative inline-block pb-1 text-black custom-underline transition-all duration-300 text-[20px]"
+            className=" font-bold hover:text-purple  relative inline-block pb-1 text-black custom-underline transition-all duration-300 text-[19px]"
           >
             About Us
           </Link>
@@ -46,19 +46,27 @@ const HomeNavbar = () => {
         <li>
           <Link
             to="/services"
-            className=" font-bold hover:text-purple  relative inline-block pb-1 text-black custom-underline transition-all duration-300 text-[20px]"
+            className=" font-bold hover:text-purple  relative inline-block pb-1 text-black custom-underline transition-all duration-300 text-[19px]"
           >
             Services
           </Link>
         </li>
-        <li className="mx-8">
+        <li >
           <Link
             to="/contact-us"
-            className="font-bold bg-purple px-4 py-3 text-white rounded-full transition-all duration-300 text-[20px]"
+            className=" font-bold hover:text-purple  relative inline-block pb-1 text-black custom-underline transition-all duration-300 text-[19px]"
           >
             Contact Us
           </Link>
         </li>
+         <li 
+        // className="mx-8"
+         >
+                <Link to='/solar-calculator'
+                 className="font-bold bg-purple px-4 py-2 text-white rounded-md transition-all duration-300 text-[19px]"
+                >Calculator</Link>
+
+              </li>
         {/* <li> <a href={'#testimonial'}>Testimonial</a>             
               </li> */}
 
@@ -99,6 +107,9 @@ const HomeNavbar = () => {
             </li>
             <li className="hover:hover:text-purple hover:underline-offset-2">
               <a href="/contact-us">Contact Us</a>
+            </li>
+             <li className="hover:hover:text-purple hover:underline-offset-2">
+              <a href="/solar-calculator">Calculator</a>
             </li>
           </ul>
         </div>

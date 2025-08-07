@@ -42,7 +42,7 @@ const Navbar = () => {
           <a href="/contact-us">Contact Us</a>
         </li>
         <li className="text-lg font-medium hover:text-white  hover:bg-purple rounded py-2 px-3">
-
+  <a href="/solar-calculator">Calculator</a>
         </li>
       </ul>
       <div className="flex items-center lg:hidden gap-x-6">
@@ -81,6 +81,10 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to={'/contact-us'}>Contact Us</Link>
+
+              </li>
+               <li>
+                <Link to={'/solar-calculator'}>Calculator</Link>
 
               </li>
               <li>
